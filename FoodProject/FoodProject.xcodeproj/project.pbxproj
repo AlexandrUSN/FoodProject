@@ -12,6 +12,9 @@
 		AD9635DC29DC454900CACD09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD9635DA29DC454900CACD09 /* LaunchScreen.storyboard */; };
 		AD9635EB29DC569000CACD09 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AD9635EA29DC569000CACD09 /* SnapKit */; };
 		AD9635ED29DC569000CACD09 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = AD9635EC29DC569000CACD09 /* SnapKit-Dynamic */; };
+		AD9635F429DC67C900CACD09 /* NavigationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9635F329DC67C900CACD09 /* NavigationHandler.swift */; };
+		AD9635F729DC682F00CACD09 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9635F629DC682F00CACD09 /* BasePresenter.swift */; };
+		AD9635FA29DC687700CACD09 /* BaseNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9635F929DC687700CACD09 /* BaseNavigationVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		AD9635D829DC454900CACD09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD9635DB29DC454900CACD09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD9635DD29DC454900CACD09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD9635F329DC67C900CACD09 /* NavigationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHandler.swift; sourceTree = "<group>"; };
+		AD9635F629DC682F00CACD09 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		AD9635F929DC687700CACD09 /* BaseNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +111,36 @@
 		AD9635E829DC55A500CACD09 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				AD9635F829DC685700CACD09 /* BaseNavigationVC */,
+				AD9635F529DC67FE00CACD09 /* BasePresenter */,
+				AD9635F229DC67A800CACD09 /* Protocols */,
 				AD9635DA29DC454900CACD09 /* LaunchScreen.storyboard */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		AD9635F229DC67A800CACD09 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AD9635F329DC67C900CACD09 /* NavigationHandler.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		AD9635F529DC67FE00CACD09 /* BasePresenter */ = {
+			isa = PBXGroup;
+			children = (
+				AD9635F629DC682F00CACD09 /* BasePresenter.swift */,
+			);
+			path = BasePresenter;
+			sourceTree = "<group>";
+		};
+		AD9635F829DC685700CACD09 /* BaseNavigationVC */ = {
+			isa = PBXGroup;
+			children = (
+				AD9635F929DC687700CACD09 /* BaseNavigationVC.swift */,
+			);
+			path = BaseNavigationVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +220,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD9635F429DC67C900CACD09 /* NavigationHandler.swift in Sources */,
+				AD9635FA29DC687700CACD09 /* BaseNavigationVC.swift in Sources */,
+				AD9635F729DC682F00CACD09 /* BasePresenter.swift in Sources */,
 				AD9635D029DC454800CACD09 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
