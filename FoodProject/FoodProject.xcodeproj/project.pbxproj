@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AD9635D029DC454800CACD09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9635CF29DC454800CACD09 /* AppDelegate.swift */; };
-		AD9635D429DC454800CACD09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9635D329DC454800CACD09 /* ViewController.swift */; };
 		AD9635D929DC454900CACD09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD9635D829DC454900CACD09 /* Assets.xcassets */; };
 		AD9635DC29DC454900CACD09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD9635DA29DC454900CACD09 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -16,7 +15,6 @@
 /* Begin PBXFileReference section */
 		AD9635CC29DC454800CACD09 /* FoodProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD9635CF29DC454800CACD09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AD9635D329DC454800CACD09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AD9635D829DC454900CACD09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD9635DB29DC454900CACD09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD9635DD29DC454900CACD09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,13 +50,60 @@
 		AD9635CE29DC454800CACD09 /* FoodProject */ = {
 			isa = PBXGroup;
 			children = (
-				AD9635CF29DC454800CACD09 /* AppDelegate.swift */,
-				AD9635D329DC454800CACD09 /* ViewController.swift */,
-				AD9635D829DC454900CACD09 /* Assets.xcassets */,
-				AD9635DA29DC454900CACD09 /* LaunchScreen.storyboard */,
-				AD9635DD29DC454900CACD09 /* Info.plist */,
+				AD9635E729DC558400CACD09 /* SupportingFiles */,
+				AD9635E629DC557200CACD09 /* Resources */,
+				AD9635E529DC555F00CACD09 /* PresentationLayer */,
+				AD9635E429DC554D00CACD09 /* BusinessLayer */,
+				AD9635E329DC552B00CACD09 /* ApplicationLayer */,
 			);
 			path = FoodProject;
+			sourceTree = "<group>";
+		};
+		AD9635E329DC552B00CACD09 /* ApplicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				AD9635CF29DC454800CACD09 /* AppDelegate.swift */,
+			);
+			path = ApplicationLayer;
+			sourceTree = "<group>";
+		};
+		AD9635E429DC554D00CACD09 /* BusinessLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BusinessLayer;
+			sourceTree = "<group>";
+		};
+		AD9635E529DC555F00CACD09 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				AD9635E829DC55A500CACD09 /* Common */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		AD9635E629DC557200CACD09 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AD9635D829DC454900CACD09 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AD9635E729DC558400CACD09 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AD9635DD29DC454900CACD09 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		AD9635E829DC55A500CACD09 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AD9635DA29DC454900CACD09 /* LaunchScreen.storyboard */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,7 +176,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD9635D429DC454800CACD09 /* ViewController.swift in Sources */,
 				AD9635D029DC454800CACD09 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
